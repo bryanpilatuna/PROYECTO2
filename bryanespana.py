@@ -1,5 +1,5 @@
 def creartxt():
-    urchi=open('datos.txt','w')
+    archi=open('datos.txt','w')
     archi.close()
 
 def grabartxt():
@@ -15,6 +15,6 @@ def leertxt():
     archi=open('datos.txt','r')
     linea=archi.readline()
     while linea!="":
-        print linea
+        print(linea)
         linea=archi.readline()
         archi.close()
