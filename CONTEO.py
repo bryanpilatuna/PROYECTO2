@@ -10,11 +10,15 @@ def grabartxt(a):
 
 
 def leertxt():
+    b=0
     archi=open('DOCUMENTO.txt','r')
     linea=archi.readline()
     while linea!="":
         print(linea)
-        a=len(linea)
+        for i in range(len(linea)):
+            if linea[i] ==" ":
+                b=b+1
+        a=len(linea)-b
         linea=archi.readline()
         print ("Los caracteres son son: \n")
         print (a)                
