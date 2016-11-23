@@ -4,9 +4,15 @@ def creartxt():
 
 def grabartxt():
     archi=open('datos.txt','a')
+    archi.write('\tESCUELA POLITECNICA NACIONAL\n')
+    archi.write('\tESCUELA DE FORMACION DE TECNOLOGOS\n')
+    archi.write('\tPROGRAMACION AVANZADA\n')
+    archi.write('\tINGENIERO JUAN ZALDUMBIDE\n')
+    archi.write('INTEGRANTES\n')
     archi.write('BRYAN PILATUÑA\n')
-    archi.write('BRYAN ESPAÑA\n') 
-    archi.write('PROGRAMACION AVANZADA\n')
+    archi.write('BRYAN ESPAÑA\n')
+    archi.write('\tEPN-216\n')
+    
     archi.close() 
 creartxt()
 grabartxt()
