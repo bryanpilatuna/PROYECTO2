@@ -1,0 +1,2 @@
+El area del cuadrado es: 	4.0
+El perimetro del cuadrado es: 	8.0

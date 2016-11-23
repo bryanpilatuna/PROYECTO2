@@ -1,28 +1,4 @@
 import math
-def creartxt():
-    archi=open('datos.txt','w')
-    archi.close()
-
-def grabartxt():
-    archi=open('datos.txt','a')
-    archi.write('\tESCUELA POLITECNICA NACIONAL\n')
-    archi.write('\tESCUELA DE FORMACION DE TECNOLOGOS\n')
-    archi.write('\tPROGRAMACION AVANZADA\n')
-    archi.write('\tINGENIERO JUAN ZALDUMBIDE\n')
-    archi.write('INTEGRANTES\n')
-    archi.write('BRYAN PILATUÑA\n')
-    archi.write('BRYAN ESPAÑA\n')
-    archi.write('\tEPN-216\n')
-    
-    archi.close() 
-
-def leertxt():
-    archi=open('datos.txt','r')
-    linea=archi.readline()
-    while linea!="":
-        print(linea)
-        linea=archi.readline()
-        archi.close()
 
 def triangulo(fig):
     print("\tMenu ",fig)
@@ -89,6 +65,16 @@ def main():
         if sel == '3':
             triangulo("Triangulo")
         elif sel == '4':
+            def creartxt():
+                archi=open('impares.txt','w')
+                archi.close()
+            def grabartxt(areacua,pericua):
+                archi=open('impares.txt','a')
+                archi.write('El area del cuadrado es: \t')
+                archi.write(str(areacua))  
+                archi.write('\nEl perimetro del cuadrado es: \t')
+                archi.write(str(pericua))
+                archi.close() 
             print ("AREA Y PERIMETRO DEL CUADRADO")
             lado = float(input("Ingrese el lado del cuadrado: "))
             pericua = lado+lado+lado+lado
@@ -97,9 +83,20 @@ def main():
             print (areacua)
             print ("\nEl perimetro del Cuadrado es: \n ")
             print (pericua)
+            grabartxt(areacua,pericua)
         elif sel =='5':
             poligono("Pentagono",5)
         elif sel== '6':
+            def creartxt():
+                archi=open('hexagono.txt','w')
+                archi.close()
+            def grabartxt(areahexa,perihexa):
+                archi=open('hexagono.txt','a')
+                archi.write('El area del hexagono es: \t')
+                archi.write(str(areahexa))  
+                archi.write('\nEl perimetro del hexagono es: \t')
+                archi.write(str(perihexa))
+                archi.close() 
             print ("AREA Y PERIMETRO DEL HEXAGONO\n")
             ladohexa = float(input("Ingrese el lado del Hexagono"))
             apotema = float (input("Ingrese la apotema del Hexagono"))
@@ -109,9 +106,20 @@ def main():
             print (areahexa)
             print ("\nEl perimetro del Hexagono es: \n ")
             print (perihexa)
+            grabartxt(areahexa,perihexa)
         elif sel =='7':
             poligono("Heptagono",7)
         elif sel== '8':
+            def creartxt():
+                archi=open('octogono.txt','w')
+                archi.close()
+            def grabartxt(areaocto,periocto):
+                archi=open('octogono.txt','a')
+                archi.write('El area del octogono es: \t')
+                archi.write(str(areaocto))  
+                archi.write('\nEl perimetro del octogono es: \t')
+                archi.write(str(periocto))
+                archi.close() 
             print ("AREA Y PERIMETRO DEL OCTOGONO\n")
             ladoct = float(input("Ingrese el lado del Octogono"))
             apotemaoct = float (input("Ingrese la apotema del Octogono"))
@@ -121,9 +129,20 @@ def main():
             print (areaocto)
             print ("\nEl perimetro del Octogono es: \n ")
             print (periocto)
+            grabartxt(areaocto,periocto)
         elif sel =='9':
             poligono("Eneagono",9)
         elif sel== '10':
+            def creartxt():
+                archi=open('decagono.txt','w')
+                archi.close()
+            def grabartxt(areadeca,perideca):
+                archi=open('decagono.txt','a')
+                archi.write('El area del decagono es: \t')
+                archi.write(str(areadeca))  
+                archi.write('\nEl perimetro del decagono es: \t')
+                archi.write(str(perideca))
+                archi.close() 
             print ("AREA Y PERIMETRO DEL DECAGONO\n")
             ladodeca = float(input("Ingrese el lado del Decagono"))
             apotemadeca = float (input("Ingrese la apotema del Decagono"))
@@ -133,6 +152,7 @@ def main():
             print (areadeca)
             print ("\nEl perimetro del Decagono es: \n ")
             print (perideca)
+            grabartxt(areadeca,perideca)
         else:
              print("El numero no se encuentra en el rango del menu")
         res=input("Deseea calcular otra area y perimetro: ")

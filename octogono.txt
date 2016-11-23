@@ -1,0 +1,2 @@
+El area del octogono es: 	48.0
+El perimetro del octogono es: 	16.0
