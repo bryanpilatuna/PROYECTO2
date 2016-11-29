@@ -2,10 +2,12 @@ def creartxt():
     archi=open('palabra.txt','w')
     archi.close()
     
-def grabartxt():
+def grabartxt(h,p):
     archi=open('palabra.txt','a')
-    archi.write("El total de las palabras son:\t")
-    archi.write(str())
+    archi.write("La palabra de Harry se repide: \t")
+    archi.write(str(h))
+    archi.write("\nLa palabra de Potter se repide: \t")
+    archi.write(str(p))
     archi.close() 
 
 def leertxt():
@@ -33,7 +35,7 @@ def leertxt():
         archi.close()
     print(h)
     print(p)
-    grabartxt()
+    grabartxt(h,p)
     
         
 creartxt()       

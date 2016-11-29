@@ -1,1 +1,2 @@
-El total de las palabras son:	
+La palabra de Harry se repide: 	2
+La palabra de Potter se repide: 	3
