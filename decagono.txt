@@ -1,2 +1,3 @@
 El area del decagono es: 	60.0
+El perimetro del decagono es: 	20.0El area del decagono es: 	60.0
 El perimetro del decagono es: 	20.0
