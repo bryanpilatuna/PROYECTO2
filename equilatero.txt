@@ -1,0 +1,2 @@
+El area del hexagono es: 	1.7320508075688772
+El perimetro del hexagono es: 	6

@@ -1,0 +1,2 @@
+El area del Poligono es: 	15.0
+El perimetro del Poligono es: 	10.0

@@ -1,5 +1,4 @@
 import math
-
 def triangulo(fig):
     print("\tMenu ",fig)
     print("1.Triángulo Equilátero")
@@ -13,6 +12,18 @@ def triangulo(fig):
         a=(math.sqrt(3)*b**2)/4
         p=(3*b)
         imprimir(a,p)
+        def creartxt():
+                archi=open('equilatero.txt','w')
+                archi.close()
+        def grabartxt(a,p):
+                archi=open('equilatero.txt','a')
+                archi.write('El area del Triángulo Equilátero es: \t')
+                archi.write(str(a))  
+                archi.write('\nEl perimetro del Triángulo Equilátero es: \t')
+                archi.write(str(p))
+                archi.close()
+        creartxt()
+        grabartxt(a,p)
     elif sel == '2':
         print("2.-Triángulo Isósceles")
         b=int(input("Ingrese la base: "))
@@ -21,6 +32,18 @@ def triangulo(fig):
         a=(b*math.sqrt(l**2-(b**2/4)))/2
         p=(2*l+b)
         imprimir(a,p)
+        def creartxt():
+                archi=open('isosceles.txt','w')
+                archi.close()
+        def grabartxt(a,p):
+                archi=open('isosceles.txt','a')
+                archi.write('El area del Triángulo Isósceles es: \t')
+                archi.write(str(a))  
+                archi.write('\nEl perimetro del Triángulo Isósceles es: \t')
+                archi.write(str(p))
+                archi.close()
+        creartxt()
+        grabartxt(a,p)
     elif sel == '3':
         print("3.-Triángulo Escaleno")
         b=int(input("Ingrese la base: ")) 
@@ -30,6 +53,18 @@ def triangulo(fig):
         a=(b*h)/2
         p=(b+l+l2)
         imprimir(a,p)
+        def creartxt():
+                archi=open('escaleno.txt','w')
+                archi.close()
+        def grabartxt(a,p):
+                archi=open('escaleno.txt','a')
+                archi.write('El area del Triángulo Isósceles es: \t')
+                archi.write(str(a))  
+                archi.write('\nEl perimetro del Triángulo Isósceles es: \t')
+                archi.write(str(p))
+                archi.close()
+        creartxt()
+        grabartxt(a,p)
     else:
         print("El numero no se encuentra en el rango del menu ")
 
@@ -41,6 +76,18 @@ def poligono(fig,lad):
     p=l*n
     a=(p*apo)/2
     imprimir(a,p)
+    def creartxt():
+                archi=open('poligono.txt','w')
+                archi.close()
+    def grabartxt(a,p):
+                archi=open('poligono.txt','a')
+                archi.write('El area del Poligono es: \t')
+                archi.write(str(a))  
+                archi.write('\nEl perimetro del Poligono es: \t')
+                archi.write(str(p))
+                archi.close()
+    creartxt()
+    grabartxt(a,p)
 
 def imprimir(a,p):
     print("El area de la figura es: ",a)

@@ -1,0 +1,2 @@
+El area del Triángulo Isósceles es: 	4.0
+El perimetro del Triángulo Isósceles es: 	7
