@@ -40,10 +40,11 @@ def leertxt():
                 a=a+linea[i]
         linea=archi.readline()     
         archi.close()
+    print("La palabra de Harry se repide: \t")
     print(h)
+    print("La palabra de Potter se repide: \t")
     print(p)
     grabartxt(h,p)
-    
-        
+           
 creartxt()       
 leertxt()
