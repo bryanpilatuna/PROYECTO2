@@ -1,3 +1,10 @@
+## EPN-ESFOT-ASI Programacion Avanzada 2016-B
+## 29112016.py
+## Versión: 1.0
+## Busqueda de las palabras Harry y Potter
+
+## Autor: Bryan España
+## Fecha: 29-Nov-2016
 def creartxt():
     archi=open('palabra.txt','w')
     archi.close()
