@@ -32,9 +32,15 @@ def leertxt():
                     h=h+1
                 elif a == 'Harry.':
                     h=h+1
+                elif a == '.Harry':
+                    h=h+1
+                elif a == 'Harry,':
+                    h=h+1
                 elif a == 'Potter':
                     p=p+1
                 elif a == 'Potter.':
+                    p=p+1
+                elif a == '.Potter':
                     p=p+1
                 a=''
             else:
