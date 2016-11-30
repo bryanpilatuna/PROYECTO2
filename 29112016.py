@@ -11,9 +11,10 @@ def creartxt():
     
 def grabartxt(h,p):
     archi=open('palabra.txt','a')
-    archi.write("La palabra de Harry se repide: \t")
+    archi.write("El documento de Harry Poter contiene la palabra")
+    archi.write("\nHarry se repide: \t")
     archi.write(str(h))
-    archi.write("\nLa palabra de Potter se repide: \t")
+    archi.write("\nY tambien la palabra Potter se repide: \t")
     archi.write(str(p))
     archi.close() 
 
@@ -40,9 +41,9 @@ def leertxt():
                 a=a+linea[i]
         linea=archi.readline()     
         archi.close()
-    print("La palabra de Harry se repide: \t")
+    print("La palabra Harry se repide: \t")
     print(h)
-    print("La palabra de Potter se repide: \t")
+    print("Y tambien la palabra Potter se repide: \t")
     print(p)
     grabartxt(h,p)
            
