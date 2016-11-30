@@ -3,7 +3,7 @@
 ## Versión: 1.0
 ## Busqueda de las palabras Harry y Potter
 
-## Autor: Bryan España
+## Autor: Bryan España y Bryan Pilatuña
 ## Fecha: 29-Nov-2016
 def creartxt():
     archi=open('palabra.txt','w')
